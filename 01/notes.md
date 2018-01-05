@@ -58,37 +58,37 @@ There are many ways to get data into SE. Your options are very large. Click on t
 
 3. Forwarders - are installed on remote machines, on prod envs Forwarders are the main supply of data.
 
-    You can add data by drag and drop, if data is static just upload it.
-    e.g. .csv file. small data sets. Splunk uses source types to categorize the
-     kind of data for indexing.
-    Used in many search functions. Here it labels the data as .csv type.
-    You can adjust how SE creates the timestamp at break events.
-    You can save the source type, change the name, save as some other name.
-    add description and app type - instrumentation, monitoring and console,
-    search, system.
+        You can add data by drag and drop, if data is static just upload it.
+        e.g. .csv file. small data sets. Splunk uses source types to categorize the
+         kind of data for indexing.
+        Used in many search functions. Here it labels the data as .csv type.
+        You can adjust how SE creates the timestamp at break events.
+        You can save the source type, change the name, save as some other name.
+        add description and app type - instrumentation, monitoring and console,
+        search, system.
 
-    Hostname is the machine from which the events originate.
-    You can enter host field value with regex, the constant value, wildcards
-    with partial name.
-    Index are directory where the data is stored. Do not store all the data
-    in the main index.
+        Hostname is the machine from which the events originate.
+        You can enter host field value with regex, the constant value, wildcards
+        with partial name.
+        Index are directory where the data is stored. Do not store all the data
+        in the main index.
 
-    Having separate indexes will make searches faster.
-    Multiple indexes also allows you to differentiate views between roles,
-    you can set retention policies on different indexes.
+        Having separate indexes will make searches faster.
+        Multiple indexes also allows you to differentiate views between roles,
+        you can set retention policies on different indexes.
 
-    being able to use the index for the search string, will help a lot in
-    querying and focusing on certain events in certain index.
+        being able to use the index for the search string, will help a lot in
+        querying and focusing on certain events in certain index.
 
-    By clicking submit you can index.
+        By clicking submit you can index.
 
-    The App selection dropdown allows you to select "Instrumentation,"
-    "Monitoring," "Search & Reporting", "System."
+        The App selection dropdown allows you to select "Instrumentation,"
+        "Monitoring," "Search & Reporting", "System."
 
-    Which app to apply source type to...
+        Which app to apply source type to...
 
-    Upload is good for testing and learning. You can upload by selecting the
-    file or drag and drop.
+        Upload is good for testing and learning. You can upload by selecting the
+        file or drag and drop.
 
 ## When the data you want to index comes from files or ports on an indexer
 
