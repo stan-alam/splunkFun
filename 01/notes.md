@@ -1,12 +1,16 @@
 # Splunk is fun!
 
+It would be prudent to check the splunk basic guidelines ... before you start your journey ...
+
+http://dev.splunk.com/goto/namingguide
+
 Three main components of Splunk
 
-1. Search heads  
+1. Search heads
 
 2. indexers
 
-3. Forwarders  
+3. Forwarders
 
 
 At the heart of splunk is the index. The index collects all the data. Think of the Indexer as a factory and data as raw material. As the data is entered the inspectors identify the data and then the workers put time stamps on those events. Then you enter a query in the search field using the Splunk query language. Splunk identifies all the issues. Splunk allows you to create graphs and pretty characteristics
@@ -112,7 +116,15 @@ Let's say we're monitoring an apache log file, select the files. You can whiteli
 
 You select the hostname but unlike the upload option **you can also select which app context to use for the input** Clicking review will display the settings for the input and clicking submit will start indexing the data.
 
+# The Search and Reporting App allows you to search and analyze Data
 
+## Also allows you to create Knowledge Objects.
+
+There are 7 main components. The splunk bar is on every screen. It allows you to switch between apps, edit account, view system information, view and update configuration, monitor the progress of search jobs and find help.
+
+THe nav bar helps you navigate the application.
+
+The Search bar is used to run searches. You use the search icon to make searches.
 
 ### The primary objective is to deliver applied engineering guidance along with Splunk Apps that act as reference implementation.
 
@@ -153,4 +165,15 @@ The team members will include the following titles
 
 5. System Admin - wants to know how to deploy and monitor the apps, and wants to understand how to configure them.
 
-6. Business Analysts - A representative
+6. Business Analysts - A representative of the business who knows how the apps will be used and their expected benefit to the business.
+
+7. Release Manager - wants to ensure that the apps are packaged in a way that makes them easy to deploy and to update in the future.
+
+8. Security expert - wants to ensure that the apps comply with any security requirements in the target environment.
+
+9. Performance tester - wants to ensure that the apps performance is acceptable with production loads.
+
+
+# PAS - Pluggable Auditing System
+
+  The PAS splunk reference app is to monitor a fleet of document repositories like sharepoint. **WilSonWorks** wishes to use their application to see who has updated, searched, viewed, deleted or downloaded/uploaded documnents to their WilSonWorks Document Repo. **The application should be proactive and reactive** This will also aid in security, for monitoring suspicious activity. The application will also be geared toward non-technical b
