@@ -1,23 +1,37 @@
 # Splunk is fun!
 
-It would be prudent to check the splunk basic guidelines ... before you start your journey ...
-
-http://dev.splunk.com/goto/namingguide
-
 Three main components of Splunk
 
-1. Search heads
+1. Search heads  
 
 2. indexers
 
-3. Forwarders
+3. Forwarders  
 
 
 At the heart of splunk is the index. The index collects all the data. Think of the Indexer as a factory and data as raw material. As the data is entered the inspectors identify the data and then the workers put time stamps on those events. Then you enter a query in the search field using the Splunk query language. Splunk identifies all the issues. Splunk allows you to create graphs and pretty characteristics
 
+**A little more about the Indexer**
+
+  * Processes machine data, storing the results in Indexes as events enabling fast search and analysis.
+
+  * As the Indexer indexes data, it creates a number of files organized in sets of directories by argument
+    - contains compressed raw data and Indexes point(s) to the raw Data
+
+**A little more on Search Heads**
+
+  * Allows users to use the Search language to search the indexed Data
+
+  * Distributes user search requests to the indexers
+
+  * Consolidates the results and extract field value pairs from the events to the user
+
+  * Knowledge Objects on the Search Heads can be created to extract additional fields and transform the data without changing the underlying Index Data.
+
 
 Indexer processes machine data and organizes it by event. **Search Head** handles search requests from user and then distributes the requests to the indexers which does the searching on the data. The Search header then consolidates and enriches the data before returning them to the user. The Search Head also provides the dashboards and reports.
 **Forwarders** consume data and send data to the indexers, require minimum resources and low performant. e.g. you can install the forwarder on a web server, so that the forwarder can send the data to the indexer.
+
 
 **Splunk can scale**
 
@@ -62,37 +76,37 @@ There are many ways to get data into SE. Your options are very large. Click on t
 
 3. Forwarders - are installed on remote machines, on prod envs Forwarders are the main supply of data.
 
-        You can add data by drag and drop, if data is static just upload it.
-        e.g. .csv file. small data sets. Splunk uses source types to categorize the
-         kind of data for indexing.
-        Used in many search functions. Here it labels the data as .csv type.
-        You can adjust how SE creates the timestamp at break events.
-        You can save the source type, change the name, save as some other name.
-        add description and app type - instrumentation, monitoring and console,
-        search, system.
+    You can add data by drag and drop, if data is static just upload it.
+    e.g. .csv file. small data sets. Splunk uses source types to categorize the
+     kind of data for indexing.
+    Used in many search functions. Here it labels the data as .csv type.
+    You can adjust how SE creates the timestamp at break events.
+    You can save the source type, change the name, save as some other name.
+    add description and app type - instrumentation, monitoring and console,
+    search, system.
 
-        Hostname is the machine from which the events originate.
-        You can enter host field value with regex, the constant value, wildcards
-        with partial name.
-        Index are directory where the data is stored. Do not store all the data
-        in the main index.
+    Hostname is the machine from which the events originate.
+    You can enter host field value with regex, the constant value, wildcards
+    with partial name.
+    Index are directory where the data is stored. Do not store all the data
+    in the main index.
 
-        Having separate indexes will make searches faster.
-        Multiple indexes also allows you to differentiate views between roles,
-        you can set retention policies on different indexes.
+    Having separate indexes will make searches faster.
+    Multiple indexes also allows you to differentiate views between roles,
+    you can set retention policies on different indexes.
 
-        being able to use the index for the search string, will help a lot in
-        querying and focusing on certain events in certain index.
+    being able to use the index for the search string, will help a lot in
+    querying and focusing on certain events in certain index.
 
-        By clicking submit you can index.
+    By clicking submit you can index.
 
-        The App selection dropdown allows you to select "Instrumentation,"
-        "Monitoring," "Search & Reporting", "System."
+    The App selection dropdown allows you to select "Instrumentation,"
+    "Monitoring," "Search & Reporting", "System."
 
-        Which app to apply source type to...
+    Which app to apply source type to...
 
-        Upload is good for testing and learning. You can upload by selecting the
-        file or drag and drop.
+    Upload is good for testing and learning. You can upload by selecting the
+    file or drag and drop.
 
 ## When the data you want to index comes from files or ports on an indexer
 
@@ -116,15 +130,7 @@ Let's say we're monitoring an apache log file, select the files. You can whiteli
 
 You select the hostname but unlike the upload option **you can also select which app context to use for the input** Clicking review will display the settings for the input and clicking submit will start indexing the data.
 
-# The Search and Reporting App allows you to search and analyze Data
 
-## Also allows you to create Knowledge Objects.
-
-There are 7 main components. The splunk bar is on every screen. It allows you to switch between apps, edit account, view system information, view and update configuration, monitor the progress of search jobs and find help.
-
-THe nav bar helps you navigate the application.
-
-The Search bar is used to run searches. You use the search icon to make searches.
 
 ### The primary objective is to deliver applied engineering guidance along with Splunk Apps that act as reference implementation.
 
@@ -165,15 +171,4 @@ The team members will include the following titles
 
 5. System Admin - wants to know how to deploy and monitor the apps, and wants to understand how to configure them.
 
-6. Business Analysts - A representative of the business who knows how the apps will be used and their expected benefit to the business.
-
-7. Release Manager - wants to ensure that the apps are packaged in a way that makes them easy to deploy and to update in the future.
-
-8. Security expert - wants to ensure that the apps comply with any security requirements in the target environment.
-
-9. Performance tester - wants to ensure that the apps performance is acceptable with production loads.
-
-
-# PAS - Pluggable Auditing System
-
-  The PAS splunk reference app is to monitor a fleet of document repositories like sharepoint. **WilSonWorks** wishes to use their application to see who has updated, searched, viewed, deleted or downloaded/uploaded documnents to their WilSonWorks Document Repo. **The application should be proactive and reactive** This will also aid in security, for monitoring suspicious activity. The application will also be geared toward non-technical b
+6. Business Analysts - A representative
