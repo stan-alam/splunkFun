@@ -1,5 +1,10 @@
 # Splunk is fun!
 
+<<<<<<< HEAD
+=======
+https://www.youtube.com/watch?v=JQuzoceahww
+
+>>>>>>> develop
 Lets begin with common splunk commands ...
 
 ```
@@ -268,7 +273,84 @@ in your Launcher App.
 
 ## Adding Data --
 
+<<<<<<< HEAD
 Administrators ca
+=======
+Administrators can access the Add Data menu by clicking the Add Data icon located on the
+Splunk Enterprise home app
+
+## Add Data menu
+
+Add Data menu provides three options depending on the source to be Used
+
+  **Upload option**
+
+  Upload options allows users to upload local files that **only get indexed once.**
+  Useful for testing or data that is created only once and is never updated.
+
+  **Monitor Option** -
+
+  Monitors files, directories, http events, network ports, or data gathering Scripts
+  located on Splunk Enterprise instances.
+
+  **Forward Option**
+
+  Main source of input in most production environments. Installed on remote machines where Data
+  is gathered on forwarded to an index over a receiving port.
+
+
+## Additional Data input Management options
+
+  - Data can also be added and managed by:
+
+    **Settings > Data** Inputs below the Data headers
+
+    **Splunk CLI**
+
+    Editing - .conf files
+
+## Set Sourcetype :
+
+Data assigned by splunk will be assigned a pre-trained sourcetype, such as .csv
+
+Using the **Source Type** dropdown menu, you can change the data to a different
+predifined source type or create a new one.
+
+## Adjusting Time Stamps and Event Breaks
+
+Adjustments can be made to time stamps and event breaks by using the corresponding drop-down-menus.
+
+*note the menu will change according to source type*
+
+## How Splunk Uses Sourcetypes with data
+
+    **Sourcetype** -- is Splunk's way of categorizing the type of data
+
+    - Splunk indexing processes frequently reference Sourcetype
+    -Many searches, reports, dahshboards, apps, etc.. also rely on Sourcetype
+    - When using predefined sourcetypes, Splunk knows where to break the event,
+    the location of the timestamp and automatically create field value pairs
+
+## How Splunk Uses Sourcetypes with Data
+
+    * When Splunk does not have a predifined way to break events, it looks for a time stamp to break the data.
+
+    - In the case of multiple time stamps, a regular expression can be used to extract the desired time.
+
+    -Regular expressions can be used with any expected patterns in the data to create a line break  
+
+
+## Saving Sourcetypes
+
+  * Devs have the following options to save Sourcetypes
+
+
+## Using the Upload Option
+  Is ideal for testing and searching small datasets that are not updated
+
+
+
+>>>>>>> develop
 
 
 ### SOURCE TYPE is used for categorizing and indexing Data
