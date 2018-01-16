@@ -1,10 +1,7 @@
 # Splunk is fun!
 
-<<<<<<< HEAD
-=======
 https://www.youtube.com/watch?v=JQuzoceahww
 
->>>>>>> develop
 Lets begin with common splunk commands ...
 
 ```
@@ -273,9 +270,6 @@ in your Launcher App.
 
 ## Adding Data --
 
-<<<<<<< HEAD
-Administrators ca
-=======
 Administrators can access the Add Data menu by clicking the Add Data icon located on the
 Splunk Enterprise home app
 
@@ -350,7 +344,6 @@ Adjustments can be made to time stamps and event breaks by using the correspondi
 
 
 
->>>>>>> develop
 
 
 ### SOURCE TYPE is used for categorizing and indexing Data
