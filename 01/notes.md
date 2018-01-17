@@ -447,4 +447,30 @@ The team members will include the following titles
 
 5. System Admin - wants to know how to deploy and monitor the apps, and wants to understand how to configure them.
 
-6. Business Analysts - A representative
+6. Business Analysts - A representative of the business who knows how the apps will be used and their expected benefit to the organization.
+
+7. Release Manager - A release manager (representing a release team) wants to ensure that the applications are packaged in a way that makes easy to deploy and somewhat future proof. (i.e. by giving the application the ability to be updated)
+
+8. Security Expert - A sec expert wants to make sure that the applications comply with strict security requirements within the target environment. e.g. development vs production
+
+9. Performance Automation Engineer - wants to make sure that the applications performance is acceptable for field use/ production loads.
+
+# Pluggable Auditing System (PAS)
+
+### The Splunk reference app is intended to enable an organization to monitor a fleet of document repositories. a doc repo maybe confluence or sharepoint, box(com)
+
+WilSonWorks wishes to use the application to check who viewed, updated, modified, deleted or downloaded docs in the repo. The application required by WilSonWorks is both reactive and proactive. The app will notify WilSonWorks of these update/deletions and notify the organization if there is a security issue.
+
+Users of this application will include non-technical individuals such as investigators who will protect the data. COmplience and auditing.
+
+A manager who needs to what their employees are doing. To identify unusual behavior.
+
+This app will include an **Overview Dashboard** - provides a summary details of most reports and highlight areas that require further investigation.
+
+A **reactive Analysis** -- to determine the activities of one or more users of the document repository and the geo location where these changes/activities occurred. Including correlating the activities across different users/documents or data sets.
+
+A **rules based Proactive Analysis capabilities** - capacity to apply a set of predetermined and custom rules to the audit logs and reference data to search for potentially malicious activity.  The org can add custom rules as required to search for evolving and newly identified undersireable behaviors, or to filter out changes in behaviors that the organization no longer considers desirable.
+
+A **Statistical proactive analysis capabilities** - capacity to apply statistical analysis to the audit and reference data to establish various behavioral norms. The capacity to apply weighted factors to the different data elements in order to differentiate false positives and noise from normal behavior. 
+
+A **Workflow Solution** with capabilities such as triggering  incidents for review, categorizing them by **type**, assigning tasks to the relevant persons, capturing the details relevant to the investigation in an unaltered manner, and escalating incidents.
