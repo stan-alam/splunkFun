@@ -447,4 +447,30 @@ The team members will include the following titles
 
 5. System Admin - wants to know how to deploy and monitor the apps, and wants to understand how to configure them.
 
-6. Business Analysts - A representative
+6. Business Analysts - A representative of the business who knows how the apps will be used and their expected benefit to the organization.
+
+7. Release Manager - A release manager (representing a release team) wants to ensure that the applications are packaged in a way that makes easy to deploy and somewhat future proof. (i.e. by giving the application the ability to be updated)
+
+8. Security Expert - A sec expert wants to make sure that the applications comply with strict security requirements within the target environment. e.g. development vs production
+
+9. Performance Automation Engineer - wants to make sure that the applications performance is acceptable for field use/ production loads.
+
+# Pluggable Auditing System (PAS)
+
+### The Splunk reference app is intended to enable an organization to monitor a fleet of document repositories. a doc repo maybe confluence or sharepoint, box(com)
+
+WilSonWorks wishes to use the application to check who viewed, updated, modified, deleted or downloaded docs in the repo. The application required by WilSonWorks is both reactive and proactive. The app will notify WilSonWorks of these update/deletions and notify the organization if there is a security issue.
+
+Users of this application will include non-technical individuals such as investigators who will protect the data. COmplience and auditing.
+
+A manager who needs to what their employees are doing. To identify unusual behavior.
+
+This app will include an **Overview Dashboard**
+
+A **reactive Analysis**
+
+A **rules based Proactive Analysis capabilities**
+
+A **Statistical proactive analysis capabilities**
+
+A **Workflow Solution** with capabilities such as triggering  incidents for review, categorizing them by **type**, assigning tasks to the relevant persons, capturing the details relevant to the investigation in an unaltered manner, and escalating incidents.
