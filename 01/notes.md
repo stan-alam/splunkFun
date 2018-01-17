@@ -465,12 +465,12 @@ Users of this application will include non-technical individuals such as investi
 
 A manager who needs to what their employees are doing. To identify unusual behavior.
 
-This app will include an **Overview Dashboard**
+This app will include an **Overview Dashboard** - provides a summary details of most reports and highlight areas that require further investigation.
 
-A **reactive Analysis**
+A **reactive Analysis** -- to determine the activities of one or more users of the document repository and the geo location where these changes/activities occurred. Including correlating the activities across different users/documents or data sets.
 
-A **rules based Proactive Analysis capabilities**
+A **rules based Proactive Analysis capabilities** - capacity to apply a set of predetermined and custom rules to the audit logs and reference data to search for potentially malicious activity.  The org can add custom rules as required to search for evolving and newly identified undersireable behaviors, or to filter out changes in behaviors that the organization no longer considers desirable.
 
-A **Statistical proactive analysis capabilities**
+A **Statistical proactive analysis capabilities** - capacity to apply statistical analysis to the audit and reference data to establish various behavioral norms. The capacity to apply weighted factors to the different data elements in order to differentiate false positives and noise from normal behavior. 
 
 A **Workflow Solution** with capabilities such as triggering  incidents for review, categorizing them by **type**, assigning tasks to the relevant persons, capturing the details relevant to the investigation in an unaltered manner, and escalating incidents.
