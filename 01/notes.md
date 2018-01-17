@@ -269,7 +269,7 @@ in your Launcher App.
 
 
 ## Adding Data --
-
+(31)
 Administrators can access the Add Data menu by clicking the Add Data icon located on the
 Splunk Enterprise home app
 
@@ -317,6 +317,7 @@ Adjustments can be made to time stamps and event breaks by using the correspondi
 *note the menu will change according to source type*
 
 ## How Splunk Uses Sourcetypes with data
+(37)
 
     **Sourcetype** -- is Splunk's way of categorizing the type of data
 
@@ -326,7 +327,7 @@ Adjustments can be made to time stamps and event breaks by using the correspondi
     the location of the timestamp and automatically create field value pairs
 
 ## How Splunk Uses Sourcetypes with Data
-
+(38)
     * When Splunk does not have a predifined way to break events, it looks for a time stamp to break the data.
 
     - In the case of multiple time stamps, a regular expression can be used to extract the desired time.
@@ -335,8 +336,55 @@ Adjustments can be made to time stamps and event breaks by using the correspondi
 
 
 ## Saving Sourcetypes
+(39)
+  * Devs have the following options to save Sourcetypes if any changes were made
 
-  * Devs have the following options to save Sourcetypes
+    -Name  
+    -description
+    -Select a category to store in the predefined menu
+    -Select which app context to save it to
+
+
+## Input Settings
+
+Input settings set additional input parameters for data input :
+
+  **Host** - When splunk indexes data, each event receives a "host" value. The host value should be the name of the machine from which the name of the machine from which the event originates.
+  The type of input you choose determines the available configuration options.
+
+
+  **Index** - Splunk stores incoming data as events in the selected index. Consider using a "sandbox" index as a destination if you have problems determining  a source type for your data. A sandbox index lets you troubleshoot your configuration without impacting production indexes. This can also be changed later.
+
+## Using the Monitor Option
+(42)
+
+THe monitoring Option Monitors :
+
+ * Files
+
+ * Directories
+
+ * http events  
+
+ * network ports
+
+ * data gathering scripts located on a Splunk indexer
+
+## Monitoring Files or Directories
+(43)
+
+You can monitor files and directories for data. To monitor all objects in a directory, select the directory. **Splunk monitors and assigns a single source type to all objects within the directory.**
+This might cause problems if there are different object types or data sources in the directory. To assign multiple source types to objects in the same directory **configure individual data inputs for those objects**
+
+
+## Monitoring Files or Directories
+(44)
+**App context --**
+
+Application contexts are folders within a splunk instance that contain configurations for a specific use case or domain of data. App contexts improve manageability of input and source type definitions. **Splunk loads all app contexts based on precedence rules**
+
+**Host**
+
 
 
 ## Using the Upload Option
@@ -461,7 +509,7 @@ The team members will include the following titles
 
 WilSonWorks wishes to use the application to check who viewed, updated, modified, deleted or downloaded docs in the repo. The application required by WilSonWorks is both reactive and proactive. The app will notify WilSonWorks of these update/deletions and notify the organization if there is a security issue.
 
-Users of this application will include non-technical individuals such as investigators who will protect the data. COmplience and auditing.
+Users of this application will include non-technical individuals such as investigators who will protect the data. Complience and auditing.
 
 A manager who needs to what their employees are doing. To identify unusual behavior.
 
@@ -471,6 +519,6 @@ A **reactive Analysis** -- to determine the activities of one or more users of t
 
 A **rules based Proactive Analysis capabilities** - capacity to apply a set of predetermined and custom rules to the audit logs and reference data to search for potentially malicious activity.  The org can add custom rules as required to search for evolving and newly identified undersireable behaviors, or to filter out changes in behaviors that the organization no longer considers desirable.
 
-A **Statistical proactive analysis capabilities** - capacity to apply statistical analysis to the audit and reference data to establish various behavioral norms. The capacity to apply weighted factors to the different data elements in order to differentiate false positives and noise from normal behavior. 
+A **Statistical proactive analysis capabilities** - capacity to apply statistical analysis to the audit and reference data to establish various behavioral norms. The capacity to apply weighted factors to the different data elements in order to differentiate false positives and noise from normal behavior.
 
 A **Workflow Solution** with capabilities such as triggering  incidents for review, categorizing them by **type**, assigning tasks to the relevant persons, capturing the details relevant to the investigation in an unaltered manner, and escalating incidents.
