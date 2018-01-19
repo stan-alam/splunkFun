@@ -383,8 +383,18 @@ This might cause problems if there are different object types or data sources in
 
 Application contexts are folders within a splunk instance that contain configurations for a specific use case or domain of data. App contexts improve manageability of input and source type definitions. **Splunk loads all app contexts based on precedence rules**
 
-**Host**
+**Host** -when splunk indexes data, each event receives a "host" value. The host value should be the name of the machine from which the event originates.
 
+**Index** Splunk stores incoming data as events in the selected index. Consider using a "sandbox" index as a destination if you have problems determining a source type type for your data. A Sandbox index lets you troubleshoot your configuration without impacting production indexes. You can always change this setting later.
+
+
+--From the APP Context dropdown --browse to select a file or directory
+
+-- Similar to the upload option, you can set values for other metadata fields or keep the original settings.--
+
+## Using the forward Option
+
+**Production environments use forwarders as the main source of data input**
 
 
 ## Using the Upload Option
