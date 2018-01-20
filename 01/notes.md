@@ -1,7 +1,5 @@
 # Splunk is fun!
 
-https://www.youtube.com/watch?v=JQuzoceahww
-
 Lets begin with common splunk commands ...
 
 ```
@@ -393,14 +391,39 @@ Application contexts are folders within a splunk instance that contain configura
 -- Similar to the upload option, you can set values for other metadata fields or keep the original settings.--
 
 ## Using the forward Option
+(45)
+
 
 **Production environments use forwarders as the main source of data input**
+  -Installed on remote machines and forward data to an indexer over receiving...
 
 
 ## Using the Upload Option
   Is ideal for testing and searching small datasets that are not updated
 
 
+# 5
+(46)
+
+## searching
+
+### Data Summary establish
+* Host - Host name, IP address, or name of network host from which the events originated
+
+* Source - Name of the file, stream, or other inputs
+
+* Sourcetype - Specific data type or data format
+
+
+### Importance of learning Search?
+
+**Why is it important to be able to write searches?**
+
+ - You have questions about your data --searches retrieve the events that can answer theme
+
+ - Every report and visualization is built based on an underlying searches
+
+ - Understanding,
 
 
 
